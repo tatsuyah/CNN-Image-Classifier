@@ -4,6 +4,11 @@
 
 A Deep Neural Network to classify multiclass image made with Keras.
 
+## Requirements
+
+  * Keras = 2.0.5 (TensorFlow backend)
+  * Numpy = 1.12.1
+
 ## Usage
 
 First, collect training and validation data and deploy it like this,
