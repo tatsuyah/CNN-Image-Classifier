@@ -124,8 +124,8 @@ model.fit_generator(
     callbacks=cbks,
     validation_steps=validation_steps)
 
-target_dir = './output/'
+target_dir = './models/'
 if not os.path.exists(target_dir):
   os.mkdir(target_dir)
-model.save('./output/model.h5')
-model.save_weights('./output/weights.h5')
+model.save('./models/model.h5')
+model.save_weights('./models/weights.h5')

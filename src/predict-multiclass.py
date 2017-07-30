@@ -4,8 +4,8 @@ from keras.preprocessing.image import ImageDataGenerator, load_img, img_to_array
 from keras.models import Sequential, load_model
 
 img_width, img_height = 150, 150
-model_path = './output/model.h5'
-model_weights_path = './output/weights.h5'
+model_path = './models/model.h5'
+model_weights_path = './models/weights.h5'
 model = load_model(model_path)
 model.load_weights(model_weights_path)
 
@@ -17,11 +17,11 @@ def predict(file):
   result = array[0]
   answer = np.argmax(result)
   if answer == 0:
-    print("NN Answer: Pizza")
+    print("Label: Pizza")
   elif answer == 1:
-    print("NN Answer: Poodle")
+    print("Labels: Poodle")
   elif answer == 2:
-    print("NN Answer: Rose")
+    print("Label: Rose")
 
   return answer
 
