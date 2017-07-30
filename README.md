@@ -4,7 +4,7 @@
 
 A Simple Deep Neural Network to classify multiclass image made with Keras.
 
-<img src="https://github.com/tatsuyah/Keras-CNN-Image-Classifier/blob/master/images/accuracy.png">
+<img src="https://github.com/tatsuyah/Keras-CNN-Image-Classifier/blob/master/images/metrics.png" width="200px">
 
 ## Requirements
 
