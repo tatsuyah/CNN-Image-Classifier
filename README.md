@@ -8,12 +8,12 @@ A Simple Deep Neural Network to classify multiclass image made with Keras.
 
 ## Requirements
 
-  * Keras = 2.0.5 (TensorFlow backend)
-  * Numpy = 1.12.1
+  * Keras = 2.x (TensorFlow backend)
+  * Numpy = 1.x
 
 ## Usage
 
-First, collect training and validation data and deploy it like this,
+First, collect training and validation data and deploy it like this(for multiclass classification),
 ```
 ./data/
   train/
@@ -47,7 +47,7 @@ First, collect training and validation data and deploy it like this,
 and then run train script.
 
 ```
-python src/train.py
+python src/train-multiclass.py
 ```
 
 Train script makes model and weights file to `./output/`.
@@ -55,7 +55,7 @@ Train script makes model and weights file to `./output/`.
 To test another images, run
 
 ```
-python src/predict.py
+python src/predict-multiclass.py
 ```
 
 After training, you'll have tensorboard log in `./tf-log/`
