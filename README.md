@@ -2,7 +2,7 @@
 
 ## Overview
 
-A Simple Deep Neural Network to classify multiclass image made with Keras.
+A Simple Deep Neural Network to classify images made with Keras. This supports binary and multiclass classification.
 
 <img src="https://github.com/tatsuyah/Keras-CNN-Image-Classifier/blob/master/images/metrics.png" width="200px">
 
