@@ -56,9 +56,6 @@ To test another images, run
 python src/predict.py
 ```
 
-`predict.py` also show F1-score, Precision, Recall.
-
-
 After training, you'll have tensorboard log in `./tf-log/`
 So you can see the result
 
