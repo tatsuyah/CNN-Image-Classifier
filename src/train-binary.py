@@ -28,7 +28,7 @@ from keras.preprocessing.image import ImageDataGenerator
 from keras import optimizers
 from keras.models import Sequential, Model
 from keras.layers import Dropout, Flatten, Dense, Activation
-from keras.layers.convolutional import Convolution2D, MaxPooling2D
+from keras.layers.convolutional import Conv2D, MaxPooling2D
 from keras import callbacks
 
 DEV = False
@@ -60,13 +60,13 @@ batch_size = 32
 lr = 0.0004
 
 model = Sequential()
-model.add(Convolution2D(nb_filters1, conv1_size, conv1_size, border_mode ="same", input_shape=(img_width, img_height, 3)))
+model.add(Conv2D(nb_filters1, (conv1_size, conv1_size), padding="same", input_shape=(img_width, img_height, 3)))
 model.add(Activation("relu"))
 model.add(MaxPooling2D(pool_size=(pool_size, pool_size)))
 
-model.add(Convolution2D(nb_filters2, conv2_size, conv2_size, border_mode ="same"))
+model.add(Conv2D(nb_filters2, (conv2_size, conv2_size), padding="same"))
 model.add(Activation("relu"))
-model.add(MaxPooling2D(pool_size=(pool_size, pool_size), dim_ordering='th'))
+model.add(MaxPooling2D(pool_size=(pool_size, pool_size), data_format='channels_first'))
 
 model.add(Flatten())
 model.add(Dense(256))
