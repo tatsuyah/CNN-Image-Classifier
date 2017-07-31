@@ -48,15 +48,14 @@ train_data_dir = './data/train'
 validation_data_dir = './data/validation'
 
 img_width, img_height = 150, 150
-nb_train_samples = 1000
-nb_validation_samples = 300
+nb_train_samples = 2000
+nb_validation_samples = 800
 nb_filters1 = 32
 nb_filters2 = 64
 conv1_size = 3
 conv2_size = 2
 pool_size = 2
 classes_num = 2
-samples_per_epoch = 50
 batch_size = 32
 lr = 0.0004
 
