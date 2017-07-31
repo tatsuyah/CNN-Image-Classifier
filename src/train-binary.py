@@ -109,7 +109,7 @@ cbks = [tb_cb]
 
 model.fit_generator(
     train_generator,
-    samples_per_epoch=samples_per_epoch,
+    samples_per_epoch=nb_train_samples,
     epochs=epochs,
     validation_data=validation_generator,
     callbacks=cbks,
