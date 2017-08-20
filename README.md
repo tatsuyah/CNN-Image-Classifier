@@ -1,4 +1,4 @@
-# Keras CNN Image Classifier
+# CNN Image Classifier
 
 ## Overview
 
